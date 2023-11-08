@@ -17,6 +17,8 @@ This takes a PackedByteArray, `buffer`, of Mii data and writes all the data of i
 
 > `ByteToBinary(byte:int)`
 
-This is a helper function that takes an integer, calculates what its representation in binary is, and returns that as an Integer Array of 1s and 0s. Note, this will produce "odd" results, so you could get Arrays that are 5 entries long, 3 entries long, etc. (It doesn't add filler to clamp to actual byte multipliers).
+This is a helper function that takes an integer, `byte`, and calculates what its representation in binary is, and returns that as an Integer Array of 1s and 0s. Note, this will produce "odd" results, so you could get Arrays that are 5 entries long, 3 entries long, etc. (It doesn't add filler to clamp to actual byte multipliers).
 
+> `BinaryToInt`
 
+This does the opposite of `ByteToBinary`; it takes a Binary array created by that function, and turns it back into an integer. Useful for getting values from odd amounts of bits, such as from 3 bits or 5 bits. 
