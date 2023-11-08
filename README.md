@@ -10,7 +10,7 @@ And the function are completely untested tbh, I have had no time to actually che
 # functions
 > `LoadFromBuffer(buffer: PackedByteArray)`
 
-This takes a PackedByteArray, `buffer`, of Mii data and writes all the data of it to the values of the instance of the MiiDataResource.
+(Incomplete, nonworking) This takes a PackedByteArray, `buffer`, of Mii data and writes all the data of it to the values of the instance of the MiiDataResource. `buffer` should be 96 bytes, but currently no actual size checks are implemented.
 > `WriteToBuffer()`
 
 (Not implemented yet) Writes all the stats of the MiiDataResource instance to a PackedByteArray and returns that.
