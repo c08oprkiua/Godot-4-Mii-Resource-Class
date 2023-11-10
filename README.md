@@ -5,9 +5,9 @@ Because I forsee performance issues with using the GDScript script, I am working
 
 Most of the stats of the Mii are stored in integers, I plan to change this to enumerated values for the convenience of making new Miis in the editor. 
 
-And the function are completely untested tbh, I have had no time to actually check anything.
+Script has been tested, and currently does not work due to a bug (See To-do/Roadmap), but the binary data helper functions have been tested and work.
 
-# functions
+# Functions
 > `LoadFromBuffer(buffer: PackedByteArray)`
 
 (Incomplete, nonworking) This takes a PackedByteArray, `buffer`, of Mii data and writes all the data of it to the values of the instance of the MiiDataResource. `buffer` should be 96 bytes, but currently no actual size checks are implemented.
