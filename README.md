@@ -27,7 +27,7 @@ This does the opposite of `ByteToBinary`; it takes a Binary array created by tha
 # To-do/roadmap
 
 - [x] ~~Add To-do list~~ 
-- [] "Generate Random Mii" type function
-- [] Bugfix: helper functions do not process data when their return is assigned to a variable, for some reason. 
-- [] Complete and test custom module
-- [] Port module to GDExtension
+- [ ] "Generate Random Mii" type function
+- [ ] Bugfix: helper functions do not process data when their return is assigned to a variable, for some reason. 
+- [ ] Complete and test custom module
+- [ ] Port module to GDExtension
