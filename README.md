@@ -1,7 +1,7 @@
 # Godot-4-Mii-Resource-Class
 This is a little script I wrote for a project I'm working on that adds a custom Resource, `MiiDataResource`, to Godot 4
 
-Realistically speaking, with how often this script calls helper functions to read binary data, I should really translate this into a custom module written in C++ for performance, but right now it's just a GDScript file. 
+Because I forsee performance issues with using the GDScript script, I am working on a custom C++ module implementation of the script, which is what's in the `miidata` folder.
 
 Most of the stats of the Mii are stored in integers, I plan to change this to enumerated values for the convenience of making new Miis in the editor. 
 
