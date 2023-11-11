@@ -4,8 +4,7 @@
 
 
 void MiiDataResource::LoadFromBuffer(PackedByteArray buffer){
-    TypedArray<int8_t> binary
-
+    Array binary;
 
 }
 
@@ -17,22 +16,30 @@ void MiiDataResource::_bind_methods(){
     ClassDB::bind_method(D_METHOD("WriteToBuffer"), &MiiDataResource::WriteToBuffer);
 }
 
-TypedArray<bool> ByteToBinary(uint8_t byte){
-    TypedArray<int> bytevalues;
+//I'd switch this to an int TypedArray if I could
+//wrap my head around the syntax
+Array ByteToBinary(u_int byte){
+    Array bytevalues;
     u_int bytesize;
     bytesize = 1;
     while (bytesize < byte)
     {
         bytevalues.append(bytesize);
-        bytesize = bytesize*2;
-    }
-    TypedArray<int> binarr;
+        bytesize = bytesize << 1;
+    };
+    Array binarr;
     bytevalues.reverse();
-    for (){
+    u_int vals = 0;
+    for (vals = 0; vals <= bytevalues.size(); vals++){
+        if (byte >= vals){
+            binarr.append(1);
+        }
+        else {
+            binarr.append(0);
+        };
+    };
+}
 
-    }
-        
-
-
+MiiDataResource::MiiDataResource(){
 
 }

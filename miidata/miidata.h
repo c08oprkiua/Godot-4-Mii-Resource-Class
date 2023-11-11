@@ -10,7 +10,8 @@ public Resource {
 protected:
 	static void _bind_methods();
 
-public: 
+public:
+    MiiDataResource();
     void LoadFromBuffer(PackedByteArray buffer);
 
     void WriteToBuffer();
@@ -20,7 +21,7 @@ public:
     bool profanity;
     enum region_lock {none, JPN, USA, EUR};
     enum char_set {JPN_USA_EUR, CHN, KOR, TWN};
-    enum origin_device {none, Wii, DS, ThreeDS, WiiUSwitch};
+    enum origin_device {Wii = 1, DS, ThreeDS, WiiUSwitch};
     int mii_id;
     int creation_date;
     //bool unknown;
@@ -53,7 +54,7 @@ public:
     bool hair_flip;
 
     //Eyebrows
-
+    ~MiiDataResource();
 };
 
 VARIANT_ENUM_CAST(MiiDataResource::sex);
