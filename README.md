@@ -42,7 +42,7 @@ This does the opposite of `ByteToBinary`; it takes a binary array created by tha
   - [x] Implement helper functions
   - [ ] Implement variables:
     - [x] Meta
-    - [ ] General
+    - [x] General
     - [ ] Face Misc.
     - [ ] Hair
     - [ ] Eyes
