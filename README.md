@@ -1,7 +1,7 @@
 # Godot-4-Mii-Resource-Class
 This is a little script I wrote for a project I'm working on that adds a custom Resource, `MiiDataResource`, to Godot 4
 
-Because I forsee performance issues with using the GDScript script, I am working on a custom C++ module implementation of the script, which is what's in the `miidata` folder.
+Because I forsee performance issues with using the GDScript script, I am working on a custom C++ module implementation of the script, which is what's in the `mii` folder.
 
 Most of the stats of the Mii are stored in integers, I plan to change this to enumerated values for the convenience of making new Miis in the editor. 
 
@@ -28,7 +28,23 @@ This does the opposite of `ByteToBinary`; it takes a binary array created by tha
 
 - [x] ~~Add To-do list~~
 - [ ] Switch helper functions to use bitwise operators
+  - [X] Implemented in C++ module
 - [ ] "Generate Random Mii" type function
-- [ ] Bugfix: helper functions do not process data when their return is assigned to a variable, for some reason. 
-- [ ] Complete and test custom module
+- [ ] Script bugfix: helper functions do not process data when their return is assigned to a variable, for some reason. 
+- [ ] Complete and test custom module:
+  - [x] Implement helper functions
+  - [ ] Implement variables:
+    - [ ] Meta
+    - [ ] General
+    - [ ] Face Misc.
+    - [ ] Hair
+    - [ ] Eyes
+    - [ ] Eyebrows
+    - [ ] Nose
+    - [ ] Mouth
+    - [ ] Facial Hair
+    - [ ] Glasses
+    - [ ] Mole
+  - [ ] `LoadBuffer`
+  - [ ] `WriteToBuffer`
 - [ ] Port module to GDExtension
