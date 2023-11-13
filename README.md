@@ -25,14 +25,18 @@ This does the opposite of `ByteToBinary`; it takes a binary array created by tha
 
 
 # To-do/roadmap
-
+## General/Misc.
 - [x] ~~Add To-do list~~
-- [ ] Switch helper functions to use bitwise operators
-  - [X] Implemented in C++ module
-  - [ ] Implemented in script
 - [ ] "Generate Random Mii" type function
+- [ ] Port module to GDExtension
+
+## GDscript
+- [ ] Switch helper functions to use bitwise operators
 - [ ] Script bugfix: helper functions do not process data when their return is assigned to a variable, for some reason. 
-- [ ] Custom module progress:
+
+## C++ Module
+- [x] Switch helper functions to use bitwise operators
+- [ ] Progress:
   - [x] Implement helper functions
   - [ ] Implement variables:
     - [x] Meta
@@ -48,4 +52,3 @@ This does the opposite of `ByteToBinary`; it takes a binary array created by tha
     - [ ] Mole
   - [ ] `LoadBuffer`
   - [ ] `WriteToBuffer`
-- [ ] Port module to GDExtension
