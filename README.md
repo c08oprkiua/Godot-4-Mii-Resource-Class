@@ -32,10 +32,12 @@ This does the opposite of `ByteToBinary`; it takes a binary array created by tha
 
 ## GDscript
 - [ ] Switch helper functions to use bitwise operators
-- [ ] Script bugfix: helper functions do not process data when their return is assigned to a variable, for some reason. 
+- [ ] Script bugfix: helper functions do not process data when their return is assigned to a variable, for some reason.
+- [x] Clamp variables to valid ranges
 
 ## C++ Module
 - [x] Switch helper functions to use bitwise operators
+- [ ] Clamp variables to valid ranges
 - [ ] Progress:
   - [x] Implement helper functions
   - [ ] Implement variables:
