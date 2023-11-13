@@ -29,12 +29,13 @@ This does the opposite of `ByteToBinary`; it takes a binary array created by tha
 - [x] ~~Add To-do list~~
 - [ ] Switch helper functions to use bitwise operators
   - [X] Implemented in C++ module
+  - [ ] Implemented in script
 - [ ] "Generate Random Mii" type function
 - [ ] Script bugfix: helper functions do not process data when their return is assigned to a variable, for some reason. 
-- [ ] Complete and test custom module:
+- [ ] Custom module progress:
   - [x] Implement helper functions
   - [ ] Implement variables:
-    - [ ] Meta
+    - [x] Meta
     - [ ] General
     - [ ] Face Misc.
     - [ ] Hair
