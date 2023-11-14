@@ -41,21 +41,21 @@ This does the opposite of `ByteToBinary`; it takes a binary array created by tha
   - [ ] Meta
   - [ ] General
   - [ ] Face Misc.
-  - [ ] Hair
-  - [ ] Eyes
-  - [ ] Eyebrows
-  - [ ] Nose
-  - [ ] Mouth
-  - [ ] Facial Hair
-  - [ ] Glasses
-  - [ ] Mole
+  - [x] Hair
+  - [x] Eyes
+  - [x] Eyebrows
+  - [x] Nose
+  - [x] Mouth
+  - [x] Facial Hair
+  - [x] Glasses
+  - [x] Mole
 - [x] Implement helper functions
 - [ ] Implement variables:
-  - [x] Meta
-  - [x] General
+  - [ ] Meta
+  - [ ] General
   - [ ] Face Misc.
   - [x] Hair
-  - [ ] Eyes
+  - [x] Eyes
   - [x] Eyebrows
   - [x] Nose
   - [x] Mouth
