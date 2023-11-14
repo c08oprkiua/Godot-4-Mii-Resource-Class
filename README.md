@@ -38,19 +38,29 @@ This does the opposite of `ByteToBinary`; it takes a binary array created by tha
 ## C++ Module
 - [x] Switch helper functions to use bitwise operators
 - [ ] Clamp variables to valid ranges
-- [ ] Progress:
-  - [x] Implement helper functions
-  - [ ] Implement variables:
-    - [x] Meta
-    - [x] General
-    - [ ] Face Misc.
-    - [ ] Hair
-    - [ ] Eyes
-    - [ ] Eyebrows
-    - [ ] Nose
-    - [ ] Mouth
-    - [ ] Facial Hair
-    - [ ] Glasses
-    - [ ] Mole
-  - [ ] `LoadBuffer`
-  - [ ] `WriteToBuffer`
+  - [ ] Meta
+  - [ ] General
+  - [ ] Face Misc.
+  - [ ] Hair
+  - [ ] Eyes
+  - [ ] Eyebrows
+  - [ ] Nose
+  - [ ] Mouth
+  - [ ] Facial Hair
+  - [ ] Glasses
+  - [ ] Mole
+- [x] Implement helper functions
+- [ ] Implement variables:
+  - [x] Meta
+  - [x] General
+  - [ ] Face Misc.
+  - [ ] Hair
+  - [ ] Eyes
+  - [x] Eyebrows
+  - [x] Nose
+  - [x] Mouth
+  - [x] Facial Hair
+  - [ ] Glasses
+  - [ ] Mole
+- [ ] `LoadBuffer`
+- [ ] `WriteToBuffer`
