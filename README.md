@@ -54,13 +54,13 @@ This does the opposite of `ByteToBinary`; it takes a binary array created by tha
   - [x] Meta
   - [x] General
   - [ ] Face Misc.
-  - [ ] Hair
+  - [x] Hair
   - [ ] Eyes
   - [x] Eyebrows
   - [x] Nose
   - [x] Mouth
   - [x] Facial Hair
-  - [ ] Glasses
-  - [ ] Mole
+  - [x] Glasses
+  - [x] Mole
 - [ ] `LoadBuffer`
 - [ ] `WriteToBuffer`
