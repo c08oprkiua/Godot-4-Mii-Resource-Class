@@ -64,3 +64,7 @@ This does the opposite of `ByteToBinary`; it takes a binary array created by tha
   - [x] Mole
 - [ ] `LoadBuffer`
 - [ ] `WriteToBuffer`
+
+# Thanks to:
+* @aboood40091 for decompiling the Wii U FFL
+* [This github repo](https://github.com/HEYimHeroic/MiiDataFiles)/[This website](https://sites.google.com/view/miilibrary/contactfaqother/FAQ)
