@@ -68,3 +68,4 @@ This does the opposite of `ByteToBinary`; it takes a binary array created by tha
 # Thanks to:
 * @aboood40091 for decompiling the Wii U FFL
 * [This github repo](https://github.com/HEYimHeroic/MiiDataFiles)/[This website](https://sites.google.com/view/miilibrary/contactfaqother/FAQ)
+* The [3DS](https://www.3dbrew.org/wiki/Mii) and [Wii](https://wiibrew.org/wiki/Mii_data) wikis on the Mii data format
