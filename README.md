@@ -1,5 +1,5 @@
 # Godot-4-Mii-Resource-Class
-This is a little script I wrote for a project I'm working on that adds a custom Resource, `MiiDataResource`, to Godot 4
+Adds a custom Resource, `MiiDataResource`, to Godot 4, which allows for much easier readback, manipulation, and creation of Miis
 
 There are two main things of interest in here:
 * The script of the class, `Mii.gd`, in the `Scripts` folder. This is an easy peasy drag and drop solution if you want to easily add this to your project.
