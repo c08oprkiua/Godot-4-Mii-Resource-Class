@@ -1,20 +1,19 @@
 # Godot-4-Mii-Resource-Class
 This is a little script I wrote for a project I'm working on that adds a custom Resource, `MiiDataResource`, to Godot 4
 
-Performance issues likely will not be an issue with the script, because I have switched to bitwise operators for the `LoadFromBuffer` and `WriteToBuffer` functions.
-I am working on a custom C++ module implementation of the script, which is what's in the `mii` folder. If you want to see how far along that is, check [To-do/Roadmap](https://github.com/c08oprkiua/Godot-4-Mii-Resource-Class/edit/main/README.md#to-doroadmap).
+There are two main things of interest in here:
+* The script of the class, `Mii.gd`, in the `Scripts` folder. This is an easy peasy drag and drop solution if you want to easily add this to your project.
+* A custom C++ module implementation of the script, which is what's in the `mii` folder. If you want to see how far along that is, check [To-do/Roadmap](https://github.com/c08oprkiua/Godot-4-Mii-Resource-Class/edit/main/README.md#to-doroadmap). This implementation more in depth, because you have to compile it with the engine, but also supports in-engine documentation, as well as a ~~likely marginal~~ performance boost from being written in direct C++.
 
-Most of the stats of the Mii are stored in integers, I plan to change this to enumerated values for the convenience of making new Miis in the editor. 
-
-Script has been tested, and currently does not work due to a bug (See [To-do/Roadmap](https://github.com/c08oprkiua/Godot-4-Mii-Resource-Class/edit/main/README.md#to-doroadmap)), but the binary data helper functions have been tested and work.
+Script currently works, so does the C++ module. C++ module contains enumerations for a handful of values, which the script does not yet have.
 
 # Functions
 > `LoadFromBuffer(buffer: PackedByteArray)`
 
-(Incomplete, non-working) This takes a PackedByteArray, `buffer`, of Mii data and writes all the data of it to the values of the instance of the MiiDataResource. `buffer` should be 96 bytes, but currently no actual size checks are implemented.
+(Incomplete) This takes a PackedByteArray, `buffer`, of Mii data and writes all the data of it to the values of the instance of the MiiDataResource. Right now it specifically is expecting the data format from a Wii U/Switch.
 > `WriteToBuffer()`
 
-(Not implemented yet) Writes all the stats of the MiiDataResource instance to a PackedByteArray and returns that.
+(Not implemented yet) Writes all the stats of the MiiDataResource instance in the Wii U/Switch format to a file.
 
 > `ByteToBinary(byte:int)`
 
