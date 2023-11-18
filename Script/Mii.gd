@@ -29,7 +29,6 @@ class_name MiiDataResource
 @export var body_width: int
 @export var body_height: int
 @export var sharable: bool
-@export var author: String
 
 @export_group("Face Misc.")
 @export_range(0, 12) var face_shape: int
@@ -126,11 +125,12 @@ func LoadFromBuffer(buffer:PackedByteArray):
 	var empty: int = (tempint & 32768) >> 15
 	
 	#0x18
-	tempint = buffer.decode_u16(24)
-	mii_name = buffer.slice(24,34).get_string_from_utf16()
-	#idk
-	body_height
-	body_width
+	tempint = buffer.decode_u16(26)
+	mii_name = buffer.slice(26,46).get_string_from_utf16()
+	#0x2E
+	body_height = buffer.decode_u8(46)
+	#0x2F
+	body_width = buffer.decode_u8(47)
 	#0x30
 	tempint = buffer.decode_u8(48)
 	sharable = (tempint & 1)
@@ -204,7 +204,6 @@ func LoadFromBuffer(buffer:PackedByteArray):
 	mole_scale = (tempint & 30) >> 1
 	mole_x_position = (tempint & 992) >> 5
 	mole_y_position = (tempint &31744) >> 10
-	
 
 func WriteToBuffer(filepath: String):
 	var exportbytes: PackedByteArray
