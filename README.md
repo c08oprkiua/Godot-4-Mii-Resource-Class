@@ -76,3 +76,5 @@ Script currently works, so does the C++ module. C++ module contains enumerations
 * [This github repo](https://github.com/HEYimHeroic/MiiDataFiles)/[This website](https://sites.google.com/view/miilibrary/contactfaqother/FAQ)
 * The [3DS](https://www.3dbrew.org/wiki/Mii) and [Wii](https://wiibrew.org/wiki/Mii_data) wikis on the Mii data format
 * AJ's Mii Editor
+
+If you have any questions, join my [Discord](https://discord.com/invite/Mu6YUEmerN) or make an issue on Github.
